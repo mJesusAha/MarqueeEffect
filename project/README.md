@@ -1,9 +1,12 @@
 # Создание видео бегущей строки
 
-### Загрузить сервер: Python3 manage.py runserver
+### Загрузить сервер:
+> Python3 manage.py runserver
 
-### Тест: Python3 manage.py test
-### Адрес: localhost:8000
+### Тест: 
+> Python3 manage.py test
+### Адрес: 
+> localhost:8000
 ## Для работы необходимо установить библиотеки:
  - python3-moviepy
  - imagemagick
@@ -49,29 +52,29 @@
         )
 > 
 ## 1. Параметр text присваивает значение текста:
-### пример:
+#### пример:
 >   n = GenerateMarqueeEffect(text="Your text")
 > 
 ###    По умолчанию задано "text"
 ## 2. Выбрать цвет шрифта (font_color) и фона (background_color)
 ## Цвета необходимо задавать в формате Hex '#ffffff'
-### пример:
+#### пример:
 >  n = GenerateMarqueeEffect(font_color=#ffffff)
 > 
 ## 3. Выбрать размер шрифта (size_font)
-### Пример:
+#### Пример:
 > n = GenerateMarqueeEffect(size_font = 100)
 > 
 ## 4. Выбрать длительность создаваемого видео (duration_clip):
-### Пример:
+#### Пример:
 > n = GenerateMarqueeEffect(duration_clip = 3)
 > 
 ## 5. Задать ширину и длинну окна (width_video, height_video):
-Пример:
+#### Пример:
 > n = GenerateMarqueeEffect(width_video=100,height_video=100)
 > 
 ## 6. Можно задать адресс куда будет сохраняться видео и его название. 
-### Пример:
+#### Пример:
 > n = GenerateMarqueeEffect(address = moving_text.mp4)
 ## По умолчанию видео называется "moving_text.mp4", и сохраняется в текущей директории
 ## Так же параметры можно задавать спомощью функций:
@@ -95,10 +98,10 @@
 ## Функция генерации бегущей строки:    
 >    create_movie()
 > 
-### Например:
+#### Например:
 >    n = GenerateMarqueeEffect().create_movie()
 > 
-### Или
+#### Или
 >    n = GenerateMarqueeEffect()
 >    n.create_movie()
 
