@@ -30,7 +30,7 @@
 ### Создать экземпляр класса можно например так:
    ## n = GenerateMarqueeEffect() - это создаст экземпляр с установками по умолчанию
 ### Параметры:
-' GenerateMarqueeEffect(
+> GenerateMarqueeEffect(
         text="text",
         font_color="#00364a",
         background_color="#e392fe", 
@@ -38,7 +38,8 @@
         duration_clip=3,
         width_video=100,
        height_video=100
-        ) '
+        )
+> 
 ## 1. Параметр text присваивает значение текста:
 ### пример:
 '   n = GenerateMarqueeEffect(text="Your text")'
