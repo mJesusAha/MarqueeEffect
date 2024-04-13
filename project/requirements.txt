@@ -1,0 +1,4 @@
+Django==5.0.4
+moviepy==1.0.3
+Requests==2.31.0
+django_extensions

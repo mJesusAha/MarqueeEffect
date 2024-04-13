@@ -1,0 +1,21 @@
+<h1> Генерация бегущей строки </h1>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body text="#FFCC00" bgcolor="#330099">
+
+    <form action="runtext/" method="get">
+        <h5>Шрифт
+        <input type="color" value="color" id="color" name ="color">
+            Фон     
+        <input type="color" value="red" id="background" name ="background"></h5>
+        </5>Teкст
+        <input type="text" value="text" id="text" name ="text"></h5>
+        <input type = "submit" value="Ok">
+    </form>
+    <h4>Последние 10 запросов</h4>
+    {% block content %}
+        {% for var in table_text %}
+    <table><tr> {{var}}</tr></table>
+        {%endfor %}
+    {% endblock %}
+
+
