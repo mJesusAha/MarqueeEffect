@@ -12,23 +12,23 @@
  - django_extensions
 #### Внутри есть сборка под линукс через доккер-файл
  ## Для функции генерации строки, все что необходимо (не для сервера) Для Goglecolab:
-### !apt update
-### !apt install python3.12
-### !apt install python3-moviepy
-### !apt-get install imagemagick
-### !wget https://www.imagemagick.org/download/ImageMagick.tar.gz
-### !tar xf ImageMagick.tar.gz 
-### !cd ImageMagick-7* && ./configure && ./configure --with-modules && make && make -j 6 && make install
-### !ldconfig /usr/local/lib
-
-### from moviepy.config import change_settings
-### change_settings({"IMAGEMAGICK_BINARY": "/usr/local/bin/magick"})
-
+> !apt update
+> !apt install python3.12
+> !apt install python3-moviepy
+> !apt-get install imagemagick
+> !wget https://www.imagemagick.org/download/ImageMagick.tar.gz
+> !tar xf ImageMagick.tar.gz 
+> !cd ImageMagick-7* && ./configure && ./configure --with-modules && make && make -j 6 && make install
+> !ldconfig /usr/local/lib
+>
+> from moviepy.config import change_settings
+> change_settings({"IMAGEMAGICK_BINARY": "/usr/local/bin/magick"})
+>
 
 # Функция генерации бегущей строки.
 ### Созданная в виде отдельного класса.
 ### Создать экземпляр класса можно например так:
-   ## n = GenerateMarqueeEffect() - это создаст экземпляр с установками по умолчанию
+  > n = GenerateMarqueeEffect() - это создаст экземпляр с установками по умолчанию
 ### Параметры:
 > GenerateMarqueeEffect(
         text="text",
