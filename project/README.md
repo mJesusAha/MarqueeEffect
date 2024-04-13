@@ -15,14 +15,21 @@
 > !apt update
 > 
 > !apt install python3.12
+> 
 > !apt install python3-moviepy
+> 
 > !apt-get install imagemagick
+> 
 > !wget https://www.imagemagick.org/download/ImageMagick.tar.gz
-> !tar xf ImageMagick.tar.gz 
+> 
+> !tar xf ImageMagick.tar.gz
+> 
 > !cd ImageMagick-7* && ./configure && ./configure --with-modules && make && make -j 6 && make install
+> 
 > !ldconfig /usr/local/lib
 >
 > from moviepy.config import change_settings
+> 
 > change_settings({"IMAGEMAGICK_BINARY": "/usr/local/bin/magick"})
 >
 
