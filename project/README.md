@@ -13,6 +13,7 @@
 #### Внутри есть сборка под линукс через доккер-файл
  ## Для функции генерации строки, все что необходимо (не для сервера) Для Goglecolab:
 > !apt update
+> 
 > !apt install python3.12
 > !apt install python3-moviepy
 > !apt-get install imagemagick
