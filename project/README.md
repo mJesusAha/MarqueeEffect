@@ -33,7 +33,7 @@
 ' GenerateMarqueeEffect(
         text="text",
         font_color="#00364a",
-        background_color="#e392fe",  ##e392fe
+        background_color="#e392fe", 
         size_font=70,
         duration_clip=3,
         width_video=100,
@@ -41,21 +41,21 @@
         ) '
 ## 1. Параметр text присваивает значение текста:
 ### пример:
-##    n = GenerateMarqueeEffect(text="Your text")
+'   n = GenerateMarqueeEffect(text="Your text")'
 ###    По умолчанию задано "text"
 ## 2. Выбрать цвет шрифта (font_color) и фона (background_color)
 ## Цвета необходимо задавать в формате Hex '#ffffff'
 ### пример:
-##    n = GenerateMarqueeEffect(font_color=#ffffff)
+'  n = GenerateMarqueeEffect(font_color=#ffffff)'
 ## 3. Выбрать размер шрифта (size_font)
 ### Пример:
-## n = GenerateMarqueeEffect(size_font = 100)
+' n = GenerateMarqueeEffect(size_font = 100)'
 ## 4. Выбрать длительность создаваемого видео (duration_clip):
 ### Пример:
-## n = GenerateMarqueeEffect(duration_clip = 3)
+' n = GenerateMarqueeEffect(duration_clip = 3)'
 ## 5. Задать ширину и длинну окна (width_video, height_video):
 Пример:
-### n = GenerateMarqueeEffect(width_video=100,height_video=100)
+' n = GenerateMarqueeEffect(width_video=100,height_video=100) '
 ## 6. Можно задать адресс куда будет сохраняться видео и его название. 
 ## Параметр address
 ## По умолчанию видео называется "moving_text.mp4", и сохраняется в текущей директории
