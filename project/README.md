@@ -10,49 +10,49 @@
  - Django==5.0.4
  - Requests==2.31.0
  - django_extensions
- Внутри есть сборка под линукс через доккер-файл
+#### Внутри есть сборка под линукс через доккер-файл
  ## Для функции генерации строки, все что необходимо (не для сервера) Для Goglecolab:
-!apt update
-!apt install python3.12
-!apt install python3-moviepy
-!apt-get install imagemagick
-!wget https://www.imagemagick.org/download/ImageMagick.tar.gz
-!tar xf ImageMagick.tar.gz 
-!cd ImageMagick-7* && ./configure && ./configure --with-modules && make && make -j 6 && make install
-!ldconfig /usr/local/lib
+### !apt update
+### !apt install python3.12
+### !apt install python3-moviepy
+### !apt-get install imagemagick
+### !wget https://www.imagemagick.org/download/ImageMagick.tar.gz
+### !tar xf ImageMagick.tar.gz 
+### !cd ImageMagick-7* && ./configure && ./configure --with-modules && make && make -j 6 && make install
+### !ldconfig /usr/local/lib
 
-from moviepy.config import change_settings
-change_settings({"IMAGEMAGICK_BINARY": "/usr/local/bin/magick"})
+### from moviepy.config import change_settings
+### change_settings({"IMAGEMAGICK_BINARY": "/usr/local/bin/magick"})
 
 
-## Функция генерации бегущей строки.
-Созданная в виде отдельного класса.
-Создать экземпляр класса можно например так:
-    n = GenerateMarqueeEffect() - это создаст экземпляр с установками по умолчанию
-Параметры:
-GenerateMarqueeEffect(
-        text="text",
-        font_color="#00364a",
-        background_color="#e392fe",  ##e392fe
-        size_font=70,
-        duration_clip=3,
-        width_video=100,
-        height_video=100
-        )
-1. Параметр text присваивает значение текста:
-пример:
-    n = GenerateMarqueeEffect(text="Your text")
-    По умолчанию задано "text"
-2. Выбрать цвет шрифта (font_color) и фона (background_color)
-Цвета необходимо задавать в формате Hex '#ffffff'
-пример:
-    n = GenerateMarqueeEffect(font_color=#ffffff)
-3. Выбрать размер шрифта (size_font)
-Пример:
-n = GenerateMarqueeEffect(size_font = 100)
-4. Выбрать длительность создаваемого видео (duration_clip):
-Пример:
-n = GenerateMarqueeEffect(duration_clip = 3)
+# Функция генерации бегущей строки.
+### Созданная в виде отдельного класса.
+###Создать экземпляр класса можно например так:
+   ## n = GenerateMarqueeEffect() - это создаст экземпляр с установками по умолчанию
+###Параметры:
+## GenerateMarqueeEffect(
+##        text="text",
+##        font_color="#00364a",
+##        background_color="#e392fe",  ##e392fe
+##        size_font=70,
+##        duration_clip=3,
+##        width_video=100,
+##       height_video=100
+##        )
+## 1. Параметр text присваивает значение текста:
+###пример:
+##    n = GenerateMarqueeEffect(text="Your text")
+###    По умолчанию задано "text"
+## 2. Выбрать цвет шрифта (font_color) и фона (background_color)
+##Цвета необходимо задавать в формате Hex '#ffffff'
+### пример:
+##    n = GenerateMarqueeEffect(font_color=#ffffff)
+## 3. Выбрать размер шрифта (size_font)
+### Пример:
+## n = GenerateMarqueeEffect(size_font = 100)
+## 4. Выбрать длительность создаваемого видео (duration_clip):
+### Пример:
+## n = GenerateMarqueeEffect(duration_clip = 3)
 5. Задать ширину и длинну окна (width_video, height_video):
 Пример:
 n = GenerateMarqueeEffect(width_video=100,height_video=100)
