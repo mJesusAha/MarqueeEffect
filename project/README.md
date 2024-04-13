@@ -25,7 +25,7 @@ from moviepy.config import change_settings
 change_settings({"IMAGEMAGICK_BINARY": "/usr/local/bin/magick"})
 
 
-##Функция генерации бегущей строки.
+## Функция генерации бегущей строки.
 Созданная в виде отдельного класса.
 Создать экземпляр класса можно например так:
     n = GenerateMarqueeEffect() - это создаст экземпляр с установками по умолчанию
