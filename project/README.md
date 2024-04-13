@@ -63,7 +63,8 @@
 > n = GenerateMarqueeEffect(width_video=100,height_video=100)
 > 
 ## 6. Можно задать адресс куда будет сохраняться видео и его название. 
-## Параметр address
+### Пример:
+> n = GenerateMarqueeEffect(address = moving_text.mp4)
 ## По умолчанию видео называется "moving_text.mp4", и сохраняется в текущей директории
 ## Так же параметры можно задавать спомощью функций:
 >    set_text_string(str:str)
